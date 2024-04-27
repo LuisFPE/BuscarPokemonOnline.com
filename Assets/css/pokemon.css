@@ -1,0 +1,246 @@
+body > *{
+    font-family: "Exo 2";
+}
+
+/*Portada*/
+
+#imgPikachu{
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    margin-left: 23vw;
+    margin-top: 0vh;
+    width: 60vw;
+}
+
+#titulo{
+    width: 100%;
+    font-weight: 700;
+    font-size: 7vw;
+    margin-top: 78vw;
+    margin-left: 0vw;
+    margin-bottom: 0px;
+    transition: all 300ms linear;
+    border-bottom: solid 3px rgb(227,53,13);
+    border-top: solid 3px rgb(227,53,13);
+    border-radius: 15px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+}
+
+#titulo:hover{
+    color: rgb(227,53,13);
+    font-weight: 700;
+}
+
+/*Cuerpo de la Pagina*/
+
+main > h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+#pikachuIcon{
+    height: 56px;
+    width: 56px;
+    margin-top: -1vh;
+}
+
+.form-floating{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+
+.form-floating > button{
+    font-weight: 600;
+    font-size: 3vh;
+    color: whitesmoke;
+    background-color: rgba(227, 52, 13, 0.90);
+    border-color: rgba(227, 52, 13);
+    border-radius: 10px;
+    margin-left: 5vw;
+    padding: 0px 2vw;
+}
+
+.form-floating > button:hover{
+    background-color: rgba(227, 52, 13);
+}
+
+/*Mostrar informacion*/
+
+section{
+    width: 100%;
+    min-height: 0vh;
+    margin-left: 0%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 10px;
+}
+
+/*Informacion general del pokemon*/
+
+#info-general{
+    width: 95%;
+    margin-left: 2.5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#info-general h2{   
+    margin-top: 2vh;
+    text-align: center;
+}
+
+#info-general img{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+
+}
+
+/*Tipos del pokemon*/
+
+.tiposPokemon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tiposPokemon > div{
+    width: 33%;
+    padding: 1vh 0vw;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 1vh 0vw;
+    font-size: 120%;
+}
+
+/*Estadisticas del pokemon*/
+#info-stats{
+    margin-top: 0vh;
+    width: 100%;
+}
+
+#info-stats h2{   
+    margin-top: 2vh;
+    text-align: center;
+}
+
+/* Movimientos del pokemon*/
+
+#info-moves{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5vh;
+}
+
+#info-moves > h2{
+    margin-bottom: 4vh;
+    text-align: center;
+}
+
+#info-moves > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 0px;
+}
+
+#info-moves > div > *{
+    width: 40%;    
+}
+
+#info-moves > div > div{
+    text-align: center;
+    padding: 1vh 0px;
+    border-radius: 10px;
+}
+
+#btn_favorite{
+    background-color: transparent;
+    border-color: rgba(227, 52, 13);
+    border-radius: 10px;
+}
+
+.movil_hide{
+    display: none;
+}
+
+/* Para pantallas grandes */
+
+@media only screen and (min-width: 800px) {
+
+    /*Portada*/
+
+    #imgPikachu{
+        margin-left: 35vw;
+        width: 30vw;
+    }
+
+    #titulo{
+        font-weight: 600;
+        font-size: 5.4vw;
+        margin-top: 38vw;
+    }
+
+    /*Buscador*/
+
+    .form-floating{
+        width: 60vw;
+        margin-left: 18vw;
+    }
+
+    /*Mostrar informacion*/
+
+    section{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    /*Info general del pokemon*/
+
+    #info-general{
+        width: 90%;
+        margin-left: 5%;
+        flex-direction: row;
+    }
+
+    #info-general img{
+        width: 288px;
+        height: 288px;
+    }
+
+    /*Stats del pokemon*/
+
+    #info-stats{
+        margin-top: 5vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /* Movimientos del pokemon */
+
+    #info-moves > div > *{
+        width: 15%;    
+    }
+
+    .movil_hide{
+        display: block;
+    }
+}
+
+
+
+
+

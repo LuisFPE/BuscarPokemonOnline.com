@@ -1,0 +1,16 @@
+/* Estilo del footer de la pagina */
+
+footer{
+    font-family: "Exo 2";
+    font-size: 2vh;
+    background-color: rgb(227,53,13);
+    margin-top: 5vh;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+footer > p{
+    margin-bottom: 0px;  
+}

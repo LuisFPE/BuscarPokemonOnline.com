@@ -1,0 +1,12 @@
+/* Limpiador que se encarga de limpiar las propiedades predefinidas de la pagina*/
+
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 1;
+}
